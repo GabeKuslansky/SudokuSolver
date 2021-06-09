@@ -12,9 +12,9 @@ def read_puzzle_files():
                 f = open(f"{constants.PUZZLES_PATH}/{filename}", "r")
                 puzzle = generate_puzzle_from_file(f)
                 f.close()
-                solve_puzzle(puzzle) and writeSolution(puzzle, filename)
+                solve_puzzle(puzzle) and write_solution(puzzle, filename)
 
-def writeSolution(puzzle, filename: str):
+def write_solution(puzzle, filename: str):
     if not os.path.exists(constants.SOLUTIONS_PATH):
         os.makedirs(constants.SOLUTIONS_PATH)
     solution_filename = filename.split('.')
