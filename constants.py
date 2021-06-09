@@ -1,0 +1,3 @@
+SOLUTIONS_PATH = 'solutions'
+PUZZLES_PATH = 'puzzles'
+OPEN_CELL_INDICATOR = 'X'
